@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace FPTBook.Data.Migrations
+namespace FPTBook.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -17,7 +17,7 @@ namespace FPTBook.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.1")
+                .HasAnnotation("ProductVersion", "7.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -97,18 +97,18 @@ namespace FPTBook.Data.Migrations
                         {
                             Id = "AdminID123",
                             AccessFailedCount = 0,
-                            Address = "Da Nang",
-                            ConcurrencyStamp = "4e064861-77a8-4dd8-b31f-ad887fd96983",
+                            Address = "Gia Lai",
+                            ConcurrencyStamp = "db9411b1-b4c4-48af-b77b-e815dcda315e",
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
-                            FullName = "Nguyen Van Hoan",
+                            FullName = "Nguyen Duy Tan",
                             LockoutEnabled = true,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPdQ99VuNPR9lQEBqlYQupaGz9C+KpxTA9TtTOUyhhz8xDmxbPF8lxb/7knxTPrlQg==",
-                            PhoneNumber = "0346724026",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGwrhFAZGNRxaUZLtCabZ01Z6MXnoXZ0mordBSSiH5ao+jqpZ0EMnjRM4IQuDxRn3A==",
+                            PhoneNumber = "123456789",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "5ddfcc86-65b3-472c-a0cf-0e9d5757bfff",
+                            SecurityStamp = "a38c44f1-9ab4-4b6d-892e-072a060ab61e",
                             TwoFactorEnabled = false,
                             UserName = "admin@gmail.com"
                         });

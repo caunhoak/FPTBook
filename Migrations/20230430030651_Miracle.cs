@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace FPTBook.Data.Migrations
+namespace FPTBook.Migrations
 {
     /// <inheritdoc />
-    public partial class RoleAdmin : Migration
+    public partial class Miracle : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -312,7 +312,7 @@ namespace FPTBook.Data.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "Address", "ConcurrencyStamp", "Email", "EmailConfirmed", "FullName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "AdminID123", 0, "Da Nang", "1c8affe8-695f-4f4f-86b7-339dd634edbf", "admin@gmail.com", true, "Nguyen Van Hoan", true, null, "ADMIN@GMAIL.COM", "ADMIN@GMAIL.COM", "AQAAAAIAAYagAAAAEG3ErSVX1pxqkSdt0f3xe9CkJknshFMp/7kP2fH9XLvUjmKkv7ZoY40o5mNyqEmF6Q==", "0346724026", false, "cff57885-e87c-402a-ae4f-188039a01f8d", false, "admin@gmail.com" });
+                values: new object[] { "AdminID123", 0, "Gia Lai", "db9411b1-b4c4-48af-b77b-e815dcda315e", "admin@gmail.com", true, "Nguyen Duy Tan", true, null, "ADMIN@GMAIL.COM", "ADMIN@GMAIL.COM", "AQAAAAIAAYagAAAAEGwrhFAZGNRxaUZLtCabZ01Z6MXnoXZ0mordBSSiH5ao+jqpZ0EMnjRM4IQuDxRn3A==", "123456789", false, "a38c44f1-9ab4-4b6d-892e-072a060ab61e", false, "admin@gmail.com" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",

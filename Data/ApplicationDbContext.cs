@@ -43,17 +43,17 @@ namespace FPTBook.Data
             builder1.Entity<ApplicationUser>().HasData(
                 new ApplicationUser() {  
                                         Id = "AdminID123",
-                                        FullName = "Nguyen Van Hoan"
-                                        ,Address = "Da Nang"
+                                        FullName = "Nguyen Duy Tan"
+                                        ,Address = "Gia Lai"
                                         ,UserName = "admin@gmail.com"
                                         ,NormalizedUserName = "ADMIN@GMAIL.COM"
                                         ,Email = "admin@gmail.com"
                                         ,NormalizedEmail = "ADMIN@GMAIL.COM"
                                         ,EmailConfirmed = true
-                                        ,PasswordHash = hasher.HashPassword(null,"Hoan12345@")
+                                        ,PasswordHash = hasher.HashPassword(null,"Miracle@123")
                                         // ,SecurityStamp = "d37dafcc-608e-4922-a535-b13bc790da06"
                                         // ,ConcurrencyStamp = "0ea5c5a8-cb0c-4e6b-9e9b-43c263407543"
-                                        ,PhoneNumber = "0346724026"
+                                        ,PhoneNumber = "123456789"
                                         ,PhoneNumberConfirmed = false
                                         ,TwoFactorEnabled = false
                                         ,LockoutEnd = null
