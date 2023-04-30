@@ -41,11 +41,11 @@
 
     .book-container {
         position: relative;
-        width: 318px;
+        width: 500px;
     }
 
     .overlay {
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         opacity: 0.8;
         position: absolute;
         bottom: 100%;
@@ -54,7 +54,7 @@
         overflow: hidden;
         width: 100%;
         height: 0;
-        transition: .3s ease;
+        transition: 0.8s ease;
     }
 
     .book-container:hover .overlay {
@@ -94,8 +94,9 @@
         {
             <div class="flex-item book-container">
                 <div class="card shadow">
-                    <p style="font-style:italic; font-weight: bold;"  class="lead">@item.Title</p>
-                    <p style="font-weight: bold;" class="blockquote-footer">@item.Author</p>
+                    <p style="text-align: center; font-style:italic; font-weight: bold;"  class="lead">@item.Title</p>
+                    <p style="text-align: center; font-weight: bold;" class="blockquote-footer">@item.Author</p>
+                    <p style="text-align: center; font-weight: bold">$@item.Price</p>
 
                     <img class="card-img-top" src="@item.ImageUrl" />
                     <div class="overlay">
@@ -122,11 +123,13 @@
 }
 else if (User.IsInRole("admin"))
 {
-    <h2 class="display-2 text-center">Welcome Admin</h2>
-    
+    <h2 class="display-2 text-center" style="color: #034DA2;">Welcome</h2>
+    <h2 class="display-2 text-center" style="color: #F17126;">Admin</h2>
 }
 else if (User.IsInRole(Role.OWNER)){
-    <h2 class="display-2 text-center">Welcome Store Owner</h2>
+    <h2 class="display-2 text-center" style="color: #034DA2;">Welcome</h2>
+    <h2 class="display-2 text-center" style="color: #F17126;">Store</h2>
+    <h2 class="display-2 text-center" style="color: #24B34A;">Owner</h2>
 
     <div class="d-flex justify-content-center">
         <div class="btn-group">
@@ -153,16 +156,13 @@ else if (User.IsInRole(Role.OWNER)){
 
 } else if (User.IsInRole(Role.CUSTOMER)){
     <div style="padding-top: 40%" class="container">
-        @*<img class="hero-image" src="https://images.pexels.com/photos/214659/pexels-photo-214659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />*@
         <div class="hero-text">
-            <h2 style="color: black"class="display-3">Welcome to </h2>
             <h1 style="font-weight:bold" class="display-2">
-                <span style="color: #034DA2;">F</span>
-                <span style="color: #F17126;">P</span>
-                <span style="color: #24B34A;">T</span>
-                <span style="color: black">BOOK</span>
+                <span style="color: #034DA2;">Welcome</span>
+                <span style="color: #F17126;">to</span>
+                <span style="color: #24B34A;">Miracle</span>
+                <span style="color: black">Book</span>
             </h1>
-            <p style="color: black"  class="display-4">Let find your books</p>
             <a asp-controller="Customer" asp-action="Index" class="btn btn-primary">Shopping now</a>
         </div>
     </div>

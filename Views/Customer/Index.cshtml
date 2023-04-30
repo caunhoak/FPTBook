@@ -18,11 +18,11 @@
 
     .book-container {
         position: relative;
-        width: 318px;
+        width: 500px;
     }
 
     .overlay {
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         opacity: 0.8;
         position: absolute;
         bottom: 100%;
@@ -31,7 +31,7 @@
         overflow: hidden;
         width: 100%;
         height: 0;
-        transition: .3s ease;
+        transition: 0.8s ease;
     }
 
     .book-container:hover .overlay {
@@ -85,8 +85,9 @@
     {
         <div class="flex-item book-container">
             <div class="card shadow">
-                <p style="font-style:italic; font-weight: bold;" class="lead">@item.Title</p>
-                <p style="font-weight: bold;" class="blockquote-footer">@item.Author</p>
+                <p style="text-align: center; font-style:italic; font-weight: bold;"  class="lead">@item.Title</p>
+                <p style="text-align: center; font-weight: bold;" class="blockquote-footer">@item.Author</p>
+                <p style="text-align: center; font-weight: bold">$@item.Price</p>
                 
                 <img class="card-img-top" src="@item.ImageUrl" />
                 <div class="overlay">
